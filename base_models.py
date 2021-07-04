@@ -81,7 +81,7 @@ x = Dense(512, activation='relu')(x)
 x = Dropout(0.15)(x)
 x = Dense(64, activation='relu')(x)
 x = Dropout(0.25)(x)
-x = Dense(3, activation='softmax')(x)
+x = Dense(2, activation='softmax')(x)
 #Compiling model
 model2 = Model(inputs = tmodel_base.input, outputs = x, name = 'Our_Xception')
 model2.summary()
@@ -115,7 +115,7 @@ x = Dense(512, activation = 'relu')(x)
 x = Dropout(rate = 0.15)(x)
 x = Dense(256, activation = 'relu')(x)
 x = Dropout(rate = 0.25)(x)
-x = Dense(3, activation = 'softmax')(x)
+x = Dense(2, activation = 'softmax')(x)
 
 #Compiling model
 model3 = Model(inputs = tmodel_base.input, outputs = x)
@@ -146,7 +146,7 @@ last = last_layer.output
 x = Flatten()(last)
 x = Dense(512, activation = 'relu')(x)
 x = Dropout(rate = 0.25)(x)
-x = Dense(3, activation = 'softmax')(x)
+x = Dense(2, activation = 'softmax')(x)
 #Compiling model
 model1 = Model(inputs = tmodel_base.input, outputs = x, name = 'VGG16')
 opt1 = Adam(lr=1e-5, beta_1=0.9, beta_2=0.999)
