@@ -92,7 +92,6 @@ def stacking_ensemble(members,input_shape,n_classes):
 
 members =[our_vgg, our_xcep, our_res]
 
-n_classes=3
 batch=16
 optimizer= Adam(lr=5e-5, beta_1=0.9, beta_2=0.999)
 
