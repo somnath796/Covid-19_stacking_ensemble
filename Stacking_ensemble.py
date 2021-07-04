@@ -41,7 +41,7 @@ image_width=224
 image_height=224
 no_of_channels=3
 input_shape=(image_width,image_height,no_of_channels)
-
+n_classes=2
 
 """# **Evaluation**"""
 
