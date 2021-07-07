@@ -81,7 +81,7 @@ def stacking_ensemble(members,input_shape,n_classes):
         out.append(model(commonInput))
 
     modeltmp = concatenate(out,axis=-1)
-    modeltmp = Dense(256, activation='relu')(modeltmp)
+    #modeltmp = Dense(256, activation='relu')(modeltmp)
     modeltmp = Dense(128, activation='relu')(modeltmp)
     modeltmp = Dropout(0.1)(modeltmp)
     modeltmp = Dense(n_classes, activation='softmax')(modeltmp)
