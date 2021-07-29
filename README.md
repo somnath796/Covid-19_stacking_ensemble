@@ -8,3 +8,5 @@ This repository is a part of reasearch conducted to establish an effective COVID
 4. Shibaprasad Sen
 5. Friedhelm Schwenker
 6. Ram Sarkar
+
+The corresponding paper can be found in [here](https://www.mdpi.com/2076-3417/11/15/7004) 
